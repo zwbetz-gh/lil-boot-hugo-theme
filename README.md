@@ -1,6 +1,6 @@
 # Lil Boot
 
-TODO netlify status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/659dd95d-a48d-407b-b915-efb7db9ba4cc/deploy-status)](https://app.netlify.com/sites/lil-boot-hugo-theme/deploys)
 
 TODO description 
 
@@ -18,7 +18,7 @@ TODO description
 
 ## Demo
 
-TODO demo
+https://lil-boot-hugo-theme.netlify.com/
 
 ## Minimum Hugo version
 
@@ -29,7 +29,7 @@ Hugo version `0.54.0` or higher is required. View the [Hugo releases](https://gi
 From the root of your site:
 
 ```
-TODO
+git submodule add https://github.com/zwbetz-gh/lil-boot-hugo-theme.git themes/lil-boot-hugo-theme
 ```
 
 ## Updating
@@ -44,7 +44,7 @@ git submodule update --remote --merge
 
 TODO hugo pipes and npm setup
 
-From the root of `TODO`:
+From the root of `themes/lil-boot-hugo-theme/exampleSite`:
 
 ```
 hugo server --themesDir ../..
