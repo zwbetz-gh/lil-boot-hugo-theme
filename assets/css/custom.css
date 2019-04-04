@@ -1,12 +1,23 @@
+/* Safari grid fix */
+.row:before, 
+.row:after, {
+  display: inline-block;
+}
+
+/* For readability */
 .container {
   max-width: 800px;
 }
+
+/* Code blocks */
 pre {
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
   border-radius: 4px;
   padding: 1rem;
 }
+
+/* Table of contents */
 .toc {
   border: 1px solid; 
   border-radius: 4px;
