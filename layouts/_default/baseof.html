@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}" class="h-100">
+{{ partial "head.html" . }}
+<body class="d-flex flex-column h-100">
+  {{ partial "nav.html" . }}
+  <main role="main" class="flex-shrink-0">
+    <div class="container">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </main>
+  {{ partial "footer.html" . }}
+  {{ partial "script.html" . }}
+</body>
+</html>

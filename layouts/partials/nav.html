@@ -1,0 +1,25 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        {{ $current := . }}
+        {{ range .Site.Menus.nav }}
+        {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+        {{ $active = or $active (eq .Name $current.Title) }}
+        {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}
+        {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
+        <li class="nav-item {{ if $active }}active{{ end }}">
+          <a class="nav-link" href="{{ .URL }}">
+            {{ .Name }}
+            {{ if $active }}<span class="sr-only">(current)</span>{{ end }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </nav>
+</div>

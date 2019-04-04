@@ -1,0 +1,42 @@
+baseURL: https://example.com
+languageCode: en-us
+defaultContentLanguage: en
+title: Lil Boot
+theme: lil-boot-hugo-theme
+
+enableRobotsTXT: true
+timeout: 45000
+
+pygmentsCodefences: true
+pygmentsStyle: pygments
+
+googleAnalytics: UA-123456789-1
+disqusShortname: yourdiscussshortname
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  post: /:filename/
+
+imaging:
+  quality: 90
+
+params:
+  dateFormat: 2006-01-02
+  footer: Made with [hugo](https://gohugo.io/). Themed by [lil boot](https://github.com/zwbetz-gh/lil-boot-hugo-theme). Deployed to [netlify](https://www.netlify.com/).
+  
+menu:
+  nav:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Blog
+      url: /post/
+      weight: 2
+    - name: Tags
+      url: /tags/
+      weight: 3
+    - name: RSS
+      url: /index.xml
+      weight: 4
