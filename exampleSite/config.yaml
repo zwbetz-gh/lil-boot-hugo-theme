@@ -24,7 +24,7 @@ imaging:
 
 params:
   dateFormat: 2006-01-02
-  footer: Made with [hugo](https://gohugo.io/). Themed by [lil boot](https://github.com/zwbetz-gh/lil-boot-hugo-theme). Deployed to [netlify](https://www.netlify.com/).
+  footer: Made with [Hugo](https://gohugo.io/). Themed by [Lil Boot](https://github.com/zwbetz-gh/lil-boot-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
   
 menu:
   nav:

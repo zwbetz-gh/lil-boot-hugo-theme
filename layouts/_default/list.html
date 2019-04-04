@@ -1,14 +1,16 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  <ul class="list-unstyled">
   {{ range where .Pages.ByPublishDate.Reverse "Section" "post" }}
-    <li>
+  <div class="row">
+    <div class="col-auto pr-1">
       {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
       {{ .PublishDate.Format $dateFormat }}
+    </div>
+      <div class="col-auto pl-1">
       <a href="{{ .Permalink }}">
         {{ .Title }}
       </a>
-    </li>        
+    </div>
+  </div>
   {{ end }}
-  </ul>
 {{ end }}
