@@ -1,9 +1,3 @@
-/* Safari grid fix */
-.row:before, 
-.row:after, {
-  display: inline-block;
-}
-
 /* For readability */
 .container {
   max-width: 800px;

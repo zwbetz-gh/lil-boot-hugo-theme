@@ -6,7 +6,7 @@
       {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
       {{ .PublishDate.Format $dateFormat }}
     </div>
-      <div class="col-auto pl-1">
+      <div class="col pl-1">
       <a href="{{ .Permalink }}">
         {{ .Title }}
       </a>
