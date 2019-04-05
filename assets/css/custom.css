@@ -1,9 +1,3 @@
-/* Safari bug */
-.row:before, 
-.row:after {
-  display: none !important;
-}
-
 /* For readability */
 .container {
   max-width: 800px;
@@ -18,6 +12,9 @@ pre {
 }
 
 /* Nav */
+.nav-pills {
+  margin-top: 0.5rem;
+}
 .nav-pills a {
   color: #212529;
 }
