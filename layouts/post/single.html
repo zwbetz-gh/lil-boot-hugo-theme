@@ -6,7 +6,7 @@
   </div>
   {{ $tags := slice }}
   {{ with .Params.tags }}
-    <div class="mb-4">
+    <div class="mb-3">
       <strong>Tags: </strong>
       {{ range . }}
         {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}

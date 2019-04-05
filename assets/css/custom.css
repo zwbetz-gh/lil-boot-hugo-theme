@@ -1,3 +1,9 @@
+/* Safari bug */
+.row:before, 
+.row:after {
+  display: none !important;
+}
+
 /* For readability */
 .container {
   max-width: 800px;
@@ -11,6 +17,16 @@ pre {
   padding: 1rem;
 }
 
+/* Nav */
+.nav-pills a {
+  color: #212529;
+}
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #212529;
+}
+
 /* Table of contents */
 .toc {
   border: 1px solid; 
@@ -20,4 +36,9 @@ pre {
 }
 .toc ol {
   margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.85rem;
 }
