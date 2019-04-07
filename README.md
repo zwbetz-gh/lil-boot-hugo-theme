@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/659dd95d-a48d-407b-b915-efb7db9ba4cc/deploy-status)](https://app.netlify.com/sites/lil-boot-hugo-theme/deploys)
 
-TODO description 
+A little Hugo theme made with [Bootstrap](https://getbootstrap.com/) and [Feather](https://feathericons.com/). 
 
 ## Table of contents
 
