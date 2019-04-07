@@ -48,7 +48,7 @@
   function showMessage() {
     let message = document.createElement('p');
     message.id = 'disqus-message';
-    message.innerText = 'Disqus comments disabled when using local server';
+    message.innerText = 'Disqus comments disabled when running local server.';
 
     let container = document.getElementById('disqus-container');
     container.appendChild(message);
@@ -64,7 +64,7 @@
   }
 
   function toggleComments() {
-    {{ if not site.IsServer }}
+    {{ if site.IsServer }}
       let message = document.getElementById('disqus-message');
       if (message == null) {
         showMessage();
