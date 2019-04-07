@@ -1,14 +1,14 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   
-  <div>
+  <div class="post-info">
     {{ $dateFormat := site.Params.dateFormat | default "Jan 2, 2006" }}
     <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
   </div>
   
   {{ $tags := slice }}
   {{ with .Params.tags }}
-    <div class="mb-3">
+    <div class="post-info mb-3">
       <strong>Tags: </strong>
       {{ range . }}
         {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}

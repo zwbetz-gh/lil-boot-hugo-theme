@@ -33,6 +33,11 @@ pre {
   background-color: #212529;
 }
 
+/* Post info */
+.post-info {
+  font-size: 0.85rem;
+}
+
 /* Table of contents */
 .toc {
   font-size: 0.85rem;
