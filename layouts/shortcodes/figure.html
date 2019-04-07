@@ -1,4 +1,5 @@
 {{ $img := .Get "img" }}
+{{ $alt := .Get "alt" }}
 {{ $caption := .Get "caption" }}
 {{ $command := .Get "command" }}
 {{ $options := .Get "options" }}
@@ -20,7 +21,7 @@
 
 <figure class="figure">
   <a href="{{ $original.Permalink }}">
-    <img src="{{ $new.Permalink }}" class="figure-img img-fluid rounded" alt="">
+    <img src="{{ $new.Permalink }}" class="figure-img img-fluid rounded" alt="{{ $alt }}">
   </a>
   <figcaption class="figure-caption">{{ $caption | markdownify }}</figcaption>
 </figure>
