@@ -1,4 +1,7 @@
-{{ $ctx := . }}
 {{ with site.DisqusShortname }}
-  {{ template "_internal/disqus.html" $ctx }}
+  <div id="disqus-container">
+    <button type="button" class="btn btn-secondary" id="toggle-comments" onclick="toggleComments()">Load comments</button>
+    {{ partial "script-disqus.html" . }}
+    <noscript>Enable JavaScript to view Disqus comments.</noscript>
+  </div>
 {{ end }}

@@ -1,0 +1,83 @@
+<script>
+  function disqusVendor() {
+    var disqus_config = function () {
+    };
+
+    var d = document;
+    var s = d.createElement('script');
+    s.async = true;
+    s.src = '//' + "{{ . }}" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', + new Date());
+    (d.head || d.body).appendChild(s);
+  }
+
+  function toggleCommentsButtonText() {
+    const LOAD_COMMENTS = 'Load comments';
+    const HIDE_COMMENTS = 'Hide comments';
+    let commentsButton = document.getElementById('toggle-comments');
+    if (commentsButton.innerText === LOAD_COMMENTS) {
+      commentsButton.innerText = HIDE_COMMENTS;
+    } else {
+      commentsButton.innerText = LOAD_COMMENTS;
+    }
+  }
+
+  function loadComments() {
+    let comments = document.createElement('div');
+    comments.id = 'disqus-comments';
+
+    let vendorDiv = document.createElement('div');
+    vendorDiv.id = 'disqus_thread';
+    comments.appendChild(vendorDiv); 
+    
+    let container = document.getElementById('disqus-container');
+    container.appendChild(comments);
+
+    disqusVendor(); 
+
+    toggleCommentsButtonText();
+  }
+
+  function hideComments() {
+    let comments = document.getElementById('disqus-comments');
+    comments.parentNode.removeChild(comments); 
+
+    toggleCommentsButtonText();
+  }
+
+  function showMessage() {
+    let message = document.createElement('p');
+    message.id = 'disqus-message';
+    message.innerText = 'Disqus comments disabled when using local server';
+
+    let container = document.getElementById('disqus-container');
+    container.appendChild(message);
+
+    toggleCommentsButtonText();
+  }
+
+  function hideMessage() {
+    let message = document.getElementById('disqus-message');
+    message.parentNode.removeChild(message); 
+
+    toggleCommentsButtonText();
+  }
+
+  function toggleComments() {
+    {{ if not site.IsServer }}
+      let message = document.getElementById('disqus-message');
+      if (message == null) {
+        showMessage();
+      } else {
+        hideMessage();
+      }
+    {{ else }}
+      let comments = document.getElementById('disqus-comments');
+      if (comments == null) {
+        loadComments();
+      } else {
+        hideComments();
+      }
+    {{ end }}
+  }
+</script>

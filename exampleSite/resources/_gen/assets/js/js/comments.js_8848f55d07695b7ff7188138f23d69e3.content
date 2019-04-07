@@ -1,0 +1,48 @@
+function runVendorCode() {
+  var disqus_config = function () {
+  };
+
+  var d = document;
+  var s = d.createElement('script');
+  s.async = true;
+  s.src = '//' + "{{ . }}" + '.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', + new Date());
+  (d.head || d.body).appendChild(s);
+}
+
+function loadComments() {
+  var comments = document.createElement('div');
+  comments.id = 'disqus-comments';
+  
+  var text = document.createTextNode('COMMENTS YO?!?!');
+  comments.appendChild(text);
+
+  var vendorDiv = document.createElement('div');
+  vendorDiv.id = 'disqus_thread';
+  comments.appendChild(vendorDiv); 
+  
+  var container = document.getElementById('disqus-container');
+  container.appendChild(comments);
+
+  runVendorCode(); 
+
+  var toggleCommentsBtn = document.getElementById('toggle-comments');
+  toggleCommentsBtn.innerText = 'Hide comments';
+}
+
+function hideComments() {
+  var comments = document.getElementById('disqus-comments');
+  comments.parentNode.removeChild(comments); 
+
+  var toggleCommentsBtn = document.getElementById('toggle-comments');
+  toggleCommentsBtn.innerText = 'Load comments';
+}
+
+function toggleComments() {
+  var comments = document.getElementById('disqus-comments');
+  if (comments == null) {
+    loadComments();
+  } else {
+    hideComments();
+  }
+}

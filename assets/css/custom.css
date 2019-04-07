@@ -54,3 +54,8 @@ pre {
 .footer {
   font-size: 0.85rem;
 }
+
+/* Disqus comments */
+#toggle-comments {
+  margin-bottom: 1rem;
+}

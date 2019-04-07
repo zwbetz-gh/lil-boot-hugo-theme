@@ -2,12 +2,12 @@
 <script src="{{ $featherJs.Permalink }}"></script>
 
 <script>
-  var icon = '<i data-feather="link"></i>';
-  var headings = document.getElementsByTagName('h2');
-  for (var i = 0; i < headings.length; i++) {
-    var id = headings[i].id;
-    var iconLink = '<a href="#' + id + '">' + icon + '</a> ';
-    var headingWithIconLink = iconLink + headings[i].innerHTML;
+  let icon = '<i data-feather="link"></i>';
+  let headings = document.getElementsByTagName('h2');
+  for (let i = 0; i < headings.length; i++) {
+    let id = headings[i].id;
+    let iconLink = '<a href="#' + id + '">' + icon + '</a> ';
+    let headingWithIconLink = iconLink + headings[i].innerHTML;
     headings[i].innerHTML = headingWithIconLink;
   }
 </script>
