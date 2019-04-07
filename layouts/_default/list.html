@@ -3,7 +3,7 @@
   {{ range where .Pages.ByPublishDate.Reverse "Section" "post" }}
     <div class="row">
       <div class="col-auto pr-1">  
-        {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
+        {{ $dateFormat := site.Params.dateFormat | default "Jan 2, 2006" }}
         {{ .PublishDate.Format $dateFormat }}
       </div>
       <div class="col pl-1">

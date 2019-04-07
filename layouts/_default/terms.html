@@ -5,7 +5,7 @@
     <div class="row">
       {{ $name := .Name }}
       {{ $count := .Count }}
-      {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
+      {{ with site.GetPage (printf "/%s/%s" $type $name) }}
         <div class="col-auto pr-1">
           <span class="badge badge-secondary">{{ $count }}</span>
         </div>

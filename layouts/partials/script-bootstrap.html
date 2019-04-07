@@ -1,7 +1,9 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 {{ $jqueryJs := resources.Get "js/jquery.js" | fingerprint }}
 <script src="{{ $jqueryJs.Permalink }}"></script>
+
 {{ $popperJs := resources.Get "js/popper.js" | fingerprint }}
 <script src="{{ $popperJs.Permalink }}"></script>
+
 {{ $bootstrapJs := resources.Get "js/bootstrap.js" | fingerprint }}
 <script src="{{ $bootstrapJs.Permalink }}"></script>

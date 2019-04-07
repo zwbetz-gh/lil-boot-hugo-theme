@@ -1,10 +1,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
   <link rel="canonical" href="{{ .Permalink }}">
+  {{ hugo.Generator }}
+  
   {{ $bootstrapCss := resources.Get "css/bootstrap.css" | fingerprint }}
   <link rel="stylesheet" href="{{ $bootstrapCss.Permalink }}">
+  
   {{ $customCss := resources.Get "css/custom.css" | fingerprint | minify }}
   <link rel="stylesheet" href="{{ $customCss.Permalink }}">
-  <title>{{ .Title }} | {{ $.Site.Title }}</title>
+  
+  <title>{{ .Title }} | {{ site.Title }}</title>
 </head>

@@ -1,9 +1,11 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
+  
   <div>
-    {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
+    {{ $dateFormat := site.Params.dateFormat | default "Jan 2, 2006" }}
     <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
   </div>
+  
   {{ $tags := slice }}
   {{ with .Params.tags }}
     <div class="mb-3">
@@ -16,9 +18,12 @@
       {{ delimit $tags ", " }}
     </div>
   {{ end }}
+  
   {{ if ne .Params.toc false }}
     {{ partial "toc.html" . }}
   {{ end }}
+  
   {{ .Content }}
+  
   {{ partial "disqus.html" . }}
 {{ end }}

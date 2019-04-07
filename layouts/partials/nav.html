@@ -1,7 +1,7 @@
 <div class="container">
   <nav class="nav nav-pills nav-justified">
     {{ $current := . }}
-    {{ range .Site.Menus.nav }}
+    {{ range site.Menus.nav }}
       {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
       {{ $active = or $active (eq .Name $current.Title) }}
       {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}

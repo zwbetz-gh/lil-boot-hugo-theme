@@ -1,4 +1,4 @@
 {{ $ctx := . }}
-{{ with $.Site.DisqusShortname }}
+{{ with site.DisqusShortname }}
   {{ template "_internal/disqus.html" $ctx }}
 {{ end }}
