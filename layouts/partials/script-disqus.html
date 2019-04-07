@@ -25,6 +25,7 @@
   function loadComments() {
     let comments = document.createElement('div');
     comments.id = 'disqus-comments';
+    comments.className = 'mt-3';
 
     let vendorDiv = document.createElement('div');
     vendorDiv.id = 'disqus_thread';
@@ -48,6 +49,7 @@
   function showMessage() {
     let message = document.createElement('p');
     message.id = 'disqus-message';
+    message.className = 'mt-3';
     message.innerText = 'Disqus comments disabled when running local server.';
 
     let container = document.getElementById('disqus-container');
