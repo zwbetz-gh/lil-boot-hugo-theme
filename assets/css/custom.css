@@ -26,6 +26,7 @@ pre {
 
 /* Table of contents */
 .toc {
+  font-size: 0.85rem;
   border: 1px solid; 
   border-radius: 4px;
   padding: 1rem;
