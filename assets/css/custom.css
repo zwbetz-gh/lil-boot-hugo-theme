@@ -12,8 +12,8 @@ pre {
 }
 
 /* Nav */
-.nav-pills {
-  margin-top: 0.5rem;
+.nav {
+  background-color: rgba(0,0,0,0.1);
 }
 .nav-pills a {
   color: #212529;
