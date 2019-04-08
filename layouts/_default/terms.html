@@ -1,18 +1,16 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ $type := .Type }}
-  {{ range $key, $value := .Data.Terms.ByCount }}
-    <div class="row">
+  <ul class="list-unstyled content-list">
+    {{ range $key, $value := .Data.Terms.ByCount }}
       {{ $name := .Name }}
       {{ $count := .Count }}
       {{ with site.GetPage (printf "/%s/%s" $type $name) }}
-        <div class="col-auto pr-1">
+        <li>
           <span class="badge badge-secondary">{{ $count }}</span>
-        </div>
-        <div class="col pl-1">
           <a href="{{ .Permalink }}">{{ $name }}</a>
-        </div>
+        </li>
       {{ end }}
-    </div>
-  {{ end }}
+    {{ end }}
+  </ul>
 {{ end }}

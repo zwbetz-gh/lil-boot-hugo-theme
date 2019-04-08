@@ -1,13 +1,11 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  {{ range where .Pages.ByPublishDate.Reverse "Section" "post" }}
-    <div class="row">
-      <div class="col fixed-width-col-blog-post-date">  
+  <ul class="list-unstyled content-list">
+    {{ range where .Pages.ByPublishDate.Reverse "Section" "post" }}
+      <li>
         <span class="badge badge-secondary">{{ .PublishDate.Format "2006-01-02" }}</span>
-      </div>
-      <div class="col pl-1">
         <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </div>
-    </div>
-  {{ end }}
+      </li>
+    {{ end }}
+  </ul>
 {{ end }}

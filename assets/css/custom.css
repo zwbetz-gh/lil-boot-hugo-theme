@@ -32,9 +32,13 @@ pre {
   background-color: #212529;
 }
 
-/* Fixed width column */
-.fixed-width-col-blog-post-date {
-  flex: 0 0 105px;
+/* Lists */
+.content-list li + li {
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+}
+.content-list li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* Post info */
