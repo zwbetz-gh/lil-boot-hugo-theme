@@ -2,9 +2,8 @@
   <h1>{{ .Title }}</h1>
   {{ range where .Pages.ByPublishDate.Reverse "Section" "post" }}
     <div class="row">
-      <div class="col-auto pr-1">  
-        {{ $dateFormat := site.Params.dateFormat | default "Jan 2, 2006" }}
-        <span class="badge badge-secondary">{{ .PublishDate.Format $dateFormat }}</span>
+      <div class="col pr-1 fixed-width-col-blog-post-date">  
+        <span class="badge badge-secondary">{{ .PublishDate.Format "2006-01-02" }}</span>
       </div>
       <div class="col pl-1">
         <a href="{{ .Permalink }}">{{ .Title }}</a>

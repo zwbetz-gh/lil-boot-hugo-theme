@@ -32,6 +32,11 @@ pre {
   background-color: #212529;
 }
 
+/* Fixed width column */
+.fixed-width-col-blog-post-date {
+  flex: 0 0 80px;
+}
+
 /* Post info */
 .post-info {
   font-size: 0.85rem;

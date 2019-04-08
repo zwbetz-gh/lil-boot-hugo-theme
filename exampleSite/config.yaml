@@ -23,7 +23,6 @@ imaging:
   quality: 90
 
 params:
-  dateFormat: 2006-01-02
   footer: Made with [Hugo](https://gohugo.io/). Themed by [Lil Boot](https://github.com/zwbetz-gh/lil-boot-hugo-theme). Hosted on [Netlify](https://www.netlify.com/).
   
 menu:

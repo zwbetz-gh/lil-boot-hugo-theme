@@ -2,8 +2,7 @@
   <h1>{{ .Title }}</h1>
   
   <div class="post-info">
-    {{ $dateFormat := site.Params.dateFormat | default "Jan 2, 2006" }}
-    <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
+    <strong>Publish date: </strong>{{ .PublishDate.Format "2006-01-02" }}
   </div>
   
   {{ $tags := slice }}
