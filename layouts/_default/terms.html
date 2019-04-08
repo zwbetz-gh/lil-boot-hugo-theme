@@ -7,7 +7,7 @@
       {{ $count := .Count }}
       {{ with site.GetPage (printf "/%s/%s" $type $name) }}
         <li>
-          <span class="badge badge-secondary">{{ $count }}</span>
+          <span class="badge badge-gray">{{ $count }}</span>
           <a href="{{ .Permalink }}">{{ $name }}</a>
         </li>
       {{ end }}

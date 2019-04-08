@@ -1,0 +1,82 @@
+$black: #212529;
+$gray: #f2f2f2;
+$gray-border: #ccc;
+$small-font-size: 0.85rem;
+$border-radius: 0.25rem;
+
+/* For readability */
+.container {
+  max-width: 800px;
+}
+
+/* Images */
+img {
+  max-width:100%;
+  height:auto;
+}
+
+/* Code blocks */
+pre {
+  background-color: $gray;
+  border: 1px solid $gray-border;
+  border-radius: $border-radius;
+  padding: 1rem;
+}
+
+/* Badges and Buttons */
+.badge-gray {
+  color: $black;
+  background-color: $gray;
+  border: 1px solid $gray-border;
+}
+.btn-gray,
+.btn-gray:hover {
+  color: $black;
+  background-color: $gray;
+  border-color: $gray-border;
+}
+
+/* Nav */
+.nav {
+  background-color: $gray;
+  border: 1px solid;
+}
+.nav-pills .nav-item {
+  border-radius: 0;
+}
+.nav-pills a {
+  color: $black;
+}
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: $black;
+}
+
+/* Post info */
+.post-info {
+  font-size: $small-font-size;
+}
+
+/* Table of contents */
+.toc {
+  font-size: $small-font-size;
+  border: 1px solid; 
+  border-radius: $border-radius;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.toc ol {
+  margin-bottom: 0;
+}
+
+/* Level 2 heading links */
+.header-icon-link,
+.header-icon-link:hover {
+  color: $black;
+}
+
+/* Footer */
+.footer {
+  font-size: $small-font-size;
+}

@@ -8,7 +8,8 @@
   {{ $bootstrapCss := resources.Get "css/bootstrap.css" | fingerprint }}
   <link rel="stylesheet" href="{{ $bootstrapCss.Permalink }}">
   
-  {{ $customCss := resources.Get "css/custom.css" | fingerprint | minify }}
+  {{ $options := dict "targetPath" "css/custom.css" }}
+  {{ $customCss := resources.Get "scss/custom.scss" | toCSS $options | fingerprint | minify }}
   <link rel="stylesheet" href="{{ $customCss.Permalink }}">
   
   <title>{{ .Title }} | {{ site.Title }}</title>
