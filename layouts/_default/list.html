@@ -1,6 +1,6 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  <ul class="list-unstyled content-list">
+  <ul>
     {{ range where .Pages.ByPublishDate.Reverse "Section" "post" }}
       <li>
         <span class="badge badge-secondary">{{ .PublishDate.Format "2006-01-02" }}</span>

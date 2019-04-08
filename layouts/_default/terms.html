@@ -1,7 +1,7 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ $type := .Type }}
-  <ul class="list-unstyled content-list">
+  <ul class="">
     {{ range $key, $value := .Data.Terms.ByCount }}
       {{ $name := .Name }}
       {{ $count := .Count }}
