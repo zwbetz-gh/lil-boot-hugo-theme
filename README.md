@@ -42,8 +42,6 @@ git submodule update --remote --merge
 
 ## Run example site
 
-TODO hugo pipes and npm setup
-
 From the root of `themes/lil-boot-hugo-theme/exampleSite`:
 
 ```
@@ -52,7 +50,7 @@ hugo server --themesDir ../..
 
 ## Configuration
 
-Copy the `config.yaml` from the TODO exampleSite, then edit as desired. 
+Copy the `config.yaml` from the [`exampleSite`](https://github.com/zwbetz-gh/lil-boot-hugo-theme/tree/master/exampleSite), then edit as desired. 
 
 ## Favicons
 
