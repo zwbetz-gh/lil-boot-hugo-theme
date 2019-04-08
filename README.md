@@ -14,7 +14,6 @@ A little Hugo theme made with [Bootstrap](https://getbootstrap.com/) and [Feathe
 * [Updating](#updating)
 * [Run example site](#run-example-site)
 * [Configuration](#configuration)
-* [Favicons](#favicons)
 
 ## Demo
 
@@ -42,8 +41,6 @@ git submodule update --remote --merge
 
 ## Run example site
 
-TODO hugo pipes and npm setup
-
 From the root of `themes/lil-boot-hugo-theme/exampleSite`:
 
 ```
@@ -52,8 +49,5 @@ hugo server --themesDir ../..
 
 ## Configuration
 
-Copy the `config.yaml` from the TODO exampleSite, then edit as desired. 
+Copy the `config.yaml` from the [`exampleSite`](https://github.com/zwbetz-gh/lil-boot-hugo-theme/tree/master/exampleSite), then edit as desired. 
 
-## Favicons
-
-Upload your image to [RealFaviconGenerator](https://realfavicongenerator.net/) then copy-paste the generated favicon files under `static`. 
