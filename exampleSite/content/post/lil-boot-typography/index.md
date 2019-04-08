@@ -67,11 +67,13 @@ This is a code block following a header.
 
 ###### Header 6
 
+{{</* table "table" */>}}
 | What | Follows |
 | --- | --- |
 | A table | A header |
 | A table | A header |
 | A table | A header |
+{{</* /table */>}}
 ````
 
 # Header 1
@@ -102,11 +104,13 @@ This is a code block following a header.
 
 ###### Header 6
 
+{{< table "table" >}}
 | What    | Follows  |
 |---------|----------|
 | A table | A header |
 | A table | A header |
 | A table | A header |
+{{< /table >}}
 
 ## Horizontal Line 
 
@@ -245,7 +249,7 @@ Tables should have bold headings and alternating shaded rows.
 
 <br>
 
-{{</* table "table table-dark table-striped" */>}}
+{{</* table "table table-dark table-striped table-responsive" */>}}
 | Artist          | Album          | Year | Label                   | Awards                                                                                                                                                                                                                                                                          | Songs                                                                                                                                                                                                                     |
 |-----------------|----------------|------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Michael Jackson | Thriller       | 1982 | Epic Records            | Grammy Award for Album of the Year, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&B Album, Brit Award for Best Selling Album, Grammy Award for Best Engineered Album, Non-Classical                                                | Wanna Be Startin' Somethin', Baby Be Mine, The Girl Is Mine, Thriller, Beat It, Billie Jean, Human Nature, P.Y.T. (Pretty Young Thing), The Lady in My Life                                                               |
@@ -266,7 +270,7 @@ Tables should have bold headings and alternating shaded rows.
 
 <br>
 
-{{< table "table table-dark table-striped" >}}
+{{< table "table table-dark table-striped table-responsive" >}}
 | Artist          | Album          | Year | Label                   | Awards                                                                                                                                                                                                                                                                          | Songs                                                                                                                                                                                                                     |
 |-----------------|----------------|------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Michael Jackson | Thriller       | 1982 | Epic Records            | Grammy Award for Album of the Year, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&B Album, Brit Award for Best Selling Album, Grammy Award for Best Engineered Album, Non-Classical                                                | Wanna Be Startin' Somethin', Baby Be Mine, The Girl Is Mine, Thriller, Beat It, Billie Jean, Human Nature, P.Y.T. (Pretty Young Thing), The Lady in My Life                                                               |
