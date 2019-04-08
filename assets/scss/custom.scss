@@ -23,12 +23,15 @@ pre {
   padding: 1rem;
 }
 
-/* Badges and Buttons */
+/* Badges */
 .badge-gray {
   color: $black;
   background-color: $gray;
   border: 1px solid $gray-border;
+  font-weight: normal;
 }
+
+/* Buttons */
 .btn-gray,
 .btn-gray:hover {
   color: $black;
