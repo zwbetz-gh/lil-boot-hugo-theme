@@ -2,7 +2,7 @@
   <h1>{{ .Title }}</h1>
   {{ range where .Pages.ByPublishDate.Reverse "Section" "post" }}
     <div class="row">
-      <div class="col pr-1 fixed-width-col-blog-post-date">  
+      <div class="col fixed-width-col-blog-post-date">  
         <span class="badge badge-secondary">{{ .PublishDate.Format "2006-01-02" }}</span>
       </div>
       <div class="col pl-1">
