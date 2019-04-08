@@ -6,7 +6,7 @@ $border-radius: 0.25rem;
 
 /* For readability */
 .container {
-  max-width: 800px;
+  max-width: 750px;
 }
 
 /* Images */
@@ -37,6 +37,7 @@ pre {
   color: $black;
   background-color: $gray;
   border-color: $gray-border;
+  padding: 0.0625rem 0.375rem;
 }
 
 /* Nav */
