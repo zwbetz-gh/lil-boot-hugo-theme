@@ -2,16 +2,5 @@
 <script src="{{ $featherJs.Permalink }}"></script>
 
 <script>
-  let icon = '<i data-feather="link"></i>';
-  let headings = document.getElementsByTagName('h2');
-  for (let i = 0; i < headings.length; i++) {
-    let id = headings[i].id;
-    let iconLink = '<a class="header-icon-link" href="#' + id + '">' + icon + '</a> ';
-    let headingWithIconLink = iconLink + headings[i].innerHTML;
-    headings[i].innerHTML = headingWithIconLink;
-  }
-</script>
-
-<script>
   feather.replace()
 </script>

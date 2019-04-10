@@ -22,7 +22,7 @@
     {{ partial "toc.html" . }}
   {{ end }}
   
-  {{ .Content }}
+  {{ partial "header-link.html" .Content }}
   
   {{ partial "disqus.html" . }}
 {{ end }}
