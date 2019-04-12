@@ -1,1 +1,4 @@
-{{ . | replaceRE "(<h[2-9] id=\"([^\"]+)\">)(.+)(</h[2-9]+>)" `${1}<a class="header-icon-link" href="#${2}"><i data-feather="link"></i></a> ${3}${4}` | safeHTML }}
+{{ $icon := partial "icon/link.html" }}
+{{ $content := . | replaceRE "(<h[2-9] id=\"([^\"]+)\">)(.+)(</h[2-9]+>)" `${1}<a class="header-icon-link" href="#${2}"><i data-feather="link"></i></a> ${3}${4}` }}
+{{ $content := replaceRE "<i data-feather=\"link\"></i>" $icon $content }}
+{{ $content | safeHTML }}
