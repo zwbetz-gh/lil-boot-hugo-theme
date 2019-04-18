@@ -1,5 +1,5 @@
 <div class="container">
-  <nav class="nav nav-pills nav-justified">
+  <nav class="nav nav-tabs nav-justified">
     {{ $current := . }}
     {{ range site.Menus.nav }}
       {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}

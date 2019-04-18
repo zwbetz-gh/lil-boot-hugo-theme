@@ -43,20 +43,20 @@ pre {
 }
 
 /* Nav */
-.nav {
-  background-color: $gray;
-  border: 1px solid;
+.nav-tabs {
+  border-bottom: 1px solid $black;
 }
-.nav-pills .nav-item {
+.nav-tabs .nav-link {
+  color: $black;
   border-radius: 0;
 }
-.nav-pills a {
-  color: $black;
+.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:hover {
+  border-color: inherit;
 }
-.nav-pills .nav-link.active, 
-.nav-pills .show>.nav-link {
-  color: #fff;
-  background-color: $black;
+.nav-tabs .nav-link.active {
+  color: $black;
+  border-color: $black $black #fff;
 }
 
 /* Post info */
