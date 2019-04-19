@@ -6,7 +6,9 @@
       {{ $active = or $active (eq .Name $current.Title) }}
       {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}
       {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
-      <a class="nav-item nav-link {{ if $active }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+      <a class="nav-item nav-link {{ if $active }}active{{ end }}" href="{{ .URL }}">
+        {{ (printf "%s<br>%s" .Pre .Name) | safeHTML }}
+      </a>
     {{ end }}
   </nav>
 </div>
