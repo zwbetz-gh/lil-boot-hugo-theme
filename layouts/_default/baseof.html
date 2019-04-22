@@ -2,8 +2,9 @@
 <html lang="{{ site.Language.Lang }}" class="h-100">
 {{ partial "head.html" . }}
 <body class="d-flex flex-column h-100">
+  <a href="#main">Skip to content</a>
   {{ partial "nav.html" . }}
-  <main class="flex-shrink-0 mt-3">
+  <main id="main" class="flex-shrink-0 mt-3">
     <div class="container">
       {{ block "main" . }}{{ end }}
     </div>
