@@ -1,13 +1,13 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   
-  <div class="post-info text-muted">
+  <div class="post-info">
     <strong>Publish date: </strong>{{ .PublishDate.Format "2006-01-02" }}
   </div>
   
   {{ $tags := slice }}
   {{ with .Params.tags }}
-    <div class="post-info text-muted mb-3">
+    <div class="post-info mb-3">
       <strong>Tags: </strong>
       {{ range . }}
         {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}

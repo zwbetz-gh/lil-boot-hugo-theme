@@ -2,6 +2,6 @@
   <div class="container">
     <hr>
     {{ $default := printf "Powered by <a href=\"https://gohugo.io/\">Hugo</a> v%s" hugo.Version | safeHTML }}
-    <span class="text-muted">{{ site.Params.footer | markdownify | default $default }}</span>
+    <span class="">{{ site.Params.footer | markdownify | default $default }}</span>
   </div>
 </footer>
