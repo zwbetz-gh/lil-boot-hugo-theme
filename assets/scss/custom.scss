@@ -5,12 +5,12 @@ $gray-border: #ccc;
 $small-font-size: 0.85rem;
 $border-radius: 0.25rem;
 
-/* Accessibility: focus */ 
+/* Accessibility: element focus when tabbing through site */ 
 :focus {
   outline: 4px solid rgb(77, 144, 254);
 }
 
-/* Accessibility: skip link */
+/* Accessibility: skip nav link */
 [href="#main"] {
   font-weight: bold; 
   display: block;
@@ -26,6 +26,9 @@ $border-radius: 0.25rem;
 [href="#main"]:focus {
   top: 0;
   outline: none;
+}
+[href="#main"]:hover {
+  color: $white;
 }
 
 /* For readability */
