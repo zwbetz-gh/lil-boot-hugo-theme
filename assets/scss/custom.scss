@@ -35,9 +35,6 @@ $border-radius: 0.25rem;
 .container {
   max-width: 750px;
 }
-hr {
-  background-color: $black;
-}
 
 /* Images */
 img {
@@ -102,7 +99,7 @@ pre {
 
 /* Footer */ 
 .footer .container {
-  border-top: 1px solid $black;
+  border-top: 1px solid $gray-border;
   padding: 1rem;
   margin-top: 1rem;
   font-weight: bold;
