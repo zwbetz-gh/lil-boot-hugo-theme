@@ -11,7 +11,7 @@ pygmentsCodefences: true
 pygmentsStyle: pygments
 
 googleAnalytics: UA-123456789-1
-disqusShortname: yourdiscussshortname
+# disqusShortname: yourdiscussshortname
 
 taxonomies:
   tag: tags
