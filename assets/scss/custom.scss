@@ -99,3 +99,10 @@ pre {
 .toc ol {
   margin-bottom: 0;
 }
+
+/* Footer */ 
+.footer .container {
+  border-top: 1px solid $black;
+  padding: 1rem;
+  font-weight: bold;
+}
