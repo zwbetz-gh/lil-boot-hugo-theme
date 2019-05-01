@@ -23,6 +23,20 @@
   {{ end }}
   
   {{ partial "header-link.html" .Content }}
+
+  <p>
+    {{ with .PrevInSection }}
+    <a href="{{ .Permalink }}" class="float-left">
+      {{ printf "%s %s" (partial "icon/arrow-left-circle.html") .Title | safeHTML }}
+    </a>
+    {{ end }}
+    
+    {{ with .NextInSection }}
+    <a href="{{ .Permalink }}" class="float-right">
+      {{ printf "%s %s" .Title (partial "icon/arrow-right-circle.html") | safeHTML }}
+    </a>
+    {{ end }}
+  </p>
   
   {{ partial "disqus.html" . }}
 {{ end }}
