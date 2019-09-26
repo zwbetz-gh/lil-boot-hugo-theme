@@ -5,7 +5,7 @@ description = "A little Hugo theme made with Bootstrap and Feather."
 homepage = "https://github.com/zwbetz-gh/lil-boot-hugo-theme"
 tags = ["blog", "little", "bootstrap", "feather"]
 features = ["blog", "little", "bootstrap", "feather"]
-min_version = "0.54.0"
+min_version = "0.58.3"
 
 [author]
   name = "Zachary Betz"
