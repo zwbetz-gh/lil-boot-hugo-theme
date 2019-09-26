@@ -1,3 +1,7 @@
+**Notice:** this repo is no longer maintained.
+
+---
+
 # Lil Boot
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/659dd95d-a48d-407b-b915-efb7db9ba4cc/deploy-status)](https://app.netlify.com/sites/lil-boot-hugo-theme/deploys)
